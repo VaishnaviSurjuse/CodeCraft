@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(32, 9, 160);
+            color: white;
+        }
+       
+        header {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            background-image: url(https://media.istockphoto.com/id/2071093282/photo/abstract-blue-black-background-with-textured-transparent-squares-in-random-layers.jpg?s=1024x1024&w=is&k=20&c=x_eY33uxKSiqqRJEN_bhS3yi7b94xJ4T7gCo4jKnHgo=);
+        }
+
+        h1 {
+            color: rgb(242, 230, 230);
+        }
+        .logo h1{
+            color: rgb(254, 254, 254);
+           
+        }
+        nav {
+            margin: 20px;
+            text-align: end;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border: solid 2px white;
+            border-radius: 15px;
+        }
+
+        nav a:hover {
+            background-color: black;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            height: 478px;
+            display: flex;
+        }
+
+        .left {
+            background-color: black;
+            height: 100%;
+            width: 50%;
+            text-align: center;
+            color: white;
+        }
+
+        .left h1, p {
+            padding-top: 30px;
+        }
+
+        .right {
+            background-color: black;
+            height: 100%;
+            width: 50%;
+        }
+
+        img {
+            margin: 20px 30px;
+            border-radius: 20px;
+        }
+
+        .container2 {
+            display: flex;
+            background-color: black;
+            color: white;
+        }
+
+        .left2 {
+            height: 100%;
+            width: 50%;
+            text-align: center;
+        }
+
+        .right2 {
+            padding: 30px;
+            height: 100%;
+            width: 50%;
+        }
+
+        /* Blog styling */
+        .post {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+
+        .post h2 {
+            margin: 0;
+            color: #0066cc;
+        }
+
+        .post p {
+            color: #666;
+        }
+
+        .read-more {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        .categories, .subscribe, .featured {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .categories li {
+            margin-bottom: 10px;
+        }
+
+        .categories a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .categories a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+       <div class="logo"> <h1>CodeCraft Academy</h1></div>
+        <p>Welcome to CodeCraft Academy, a premier coding institute dedicated to empowering individuals with in-demand programming skills. Whether you're a beginner or looking to advance your knowledge, our comprehensive courses cover everything from web development to data science. With expert instructors, hands-on learning, and personalized support, we help you unlock your potential and succeed in the ever-evolving tech industry. Join us to start building your future today!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <section id="home">
+        <h2>Hello!</h2>
+        
+        <div class="container">
+            <div class="left">
+                <h1>Welcome to CodeCraft Academy – Your Gateway to a Bright Future in Tech!</h1>
+                <p>At CodeCraft Academy, we are passionate about coding and committed to providing high-quality education for learners of all levels. Whether you're just starting your programming journey or aiming to sharpen your skills, we offer courses tailored to meet your needs.</p>
+            </div>
+            <div class="right">
+                <img src="https://images.unsplash.com/photo-1587691592099-24045742c181?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="img" width="650px">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About CodeCraft Academy</h2>
+        <p>
+
+            At CodeCraft Academy, we believe that coding is not just a skill, but the foundation of innovation in today's digital world. Our mission is to equip aspiring programmers, developers, and tech enthusiasts with the tools they need to succeed in a rapidly evolving industry.
+            <br><br>
+            Founded with a vision to make quality education accessible to everyone, CodeCraft Academy offers a wide range of courses in software development, web design, data science, and more. Our expert instructors bring years of industry experience to the classroom, ensuring that students receive practical, up-to-date knowledge that they can apply immediately.
+            <br><br>
+            We take pride in our community-driven approach, where students not only learn but also collaborate on real-world projects, build professional networks, and gain the confidence to thrive in their tech careers. Whether you're starting from scratch or advancing your existing skills, CodeCraft Academy is here to support you every step of the way.
+            <br><br>
+            Join us and be part of a learning experience that empowers you to create, innovate, and lead in the world of technology.</p>
+    </section>
+
+    <section id="contact">
+        <div class="container2">
+            <div class="left2">
+                <h2>Contact</h2>
+                <p>We’re here to help! Whether you have questions about our courses, need guidance on choosing the right program, or want more information, feel free to get in touch with us.</p>
+                <h3>Location:</h3>
+                <p>123 Code Street, Innovation City, Techland 56789</p>
+                <h3>Office Hours:</h3>
+                <p>Monday to Friday: 9:00 AM – 6:00 PM</p>
+            </div>
+            <div class="right2">
+                <h3>Email:</h3>
+                <p>info@codecraftacademy.com</p>
+                <h3>Phone:</h3>
+                <p>+1 (555) 123-4567</p>
+                <h3>Follow Us:</h3>
+                <p>
+                    <ol>
+                        <li>Facebook: facebook.com/codecraftacademy</li>
+                        <li>Twitter: twitter.com/codecraft_academy</li>
+                        <li>LinkedIn: linkedin.com/company/codecraftacademy</li>
+                    </ol>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>Blog</h2>
+
+        <div class="post">
+            <h2>5 Essential Programming Languages to Learn in 2024</h2>
+            <p><i>Published on January 5, 2024</i></p>
+            <p>Discover the top programming languages that will boost your career in the coming year.</p>
+            <a class="read-more" href="#">Read More →</a>
+        </div>
+
+        <div class="post">
+            <h2>How to Build Your First Website: A Beginner’s Guide</h2>
+            <p><i>Published on December 20, 2023</i></p>
+            <p>Learn the basics of HTML, CSS, and JavaScript to create your first website.</p>
+            <a class="read-more" href="#">Read More →</a>
+        </div>
+
+        <div class="categories">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="#">Programming Tutorials</a></li>
+                <li><a href="#">Tech News</a></li>
+                <li><a href="#">Career Advice</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CodeCraft Academy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
